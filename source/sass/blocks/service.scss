@@ -1,0 +1,48 @@
+.service {
+  &__item {
+    width: 332px;
+  }
+
+  &__item-desc {
+    font-size: 18px;
+    margin: 0;
+    // margin-bottom: 16px;
+  }
+
+  &__item-text {
+    background-color: #0297D4;
+    border-radius: 20px;
+    padding: 30px 20px 28px;
+    color: #fff;
+    text-align: center;
+    margin-top: -60px;
+    min-height: 271px;
+
+    .title--h4 {
+      margin: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__img {
+    width: 149px;
+    height: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0297D4;
+    border-radius: 100px;
+    margin: 0 auto;
+
+    img {
+      margin-top: -20px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+}

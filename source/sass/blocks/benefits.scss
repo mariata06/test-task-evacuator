@@ -1,0 +1,38 @@
+.benefits {
+  padding: 100px 0;
+  .container {
+    position: relative;
+  }
+
+  &__text {
+    width: 804px;
+    font-size: 26px;
+  }
+
+  &__list {
+    width: 733px;
+    margin: 0;
+    font-size: 26px;
+    list-style: none;
+
+    li {
+      margin-bottom: 32px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        left: -40px;
+        top: 0;
+      }
+    }
+  }
+
+  &__img {
+    width: 631px;
+    height: 645px;
+    position: absolute;
+    right: 0;
+    // top: 0;
+    bottom: 0;
+  }
+}
