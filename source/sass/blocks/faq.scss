@@ -1,0 +1,23 @@
+.faq {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__item {
+    width: 684px;
+    padding: 48px;
+    background-color: #FFF5CC;
+
+    .title {
+      margin: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item-text {
+    margin: 0;
+    font-size: 26px;
+  }
+}

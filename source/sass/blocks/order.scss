@@ -1,0 +1,18 @@
+.order {
+  background-color: #FFF5CC;
+  padding: 100px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__img img {
+    margin: 0 auto;
+  }
+
+  &__item-desc {
+    font-size: 26px;
+  }
+}
