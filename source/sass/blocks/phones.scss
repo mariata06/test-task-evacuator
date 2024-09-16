@@ -1,0 +1,14 @@
+.phones {
+  background-color: #586C75;
+  background-image: url('../../img/content/icon-truck-yellow.png'), url('../../img/content/icon-truck-yellow-mirrored.png');
+
+  background-position: 0 0, calc(90px + 310px) 0;
+    /* Задаем отступ в 30px между картинками */
+  background-size: 90px;
+  /* Размер каждой картинки, например, 100px */
+  background-repeat: repeat-x;
+  /* Повтор только по горизонтали */
+
+  min-height: 142px;
+
+}

@@ -4,6 +4,8 @@
     margin: 0;
     margin-right: 20px;
     margin-left: 60px;
+    margin-left: auto;
+    margin-right: 0;
     padding: 0;
 
     list-style: none;
@@ -15,6 +17,8 @@
 
   &__link {
     color: $color-default-white;
+    color: #131515;
+    text-transform: uppercase;
 
     &.is-active {
       opacity: 0.6;
@@ -23,5 +27,10 @@
 
   &__toggle {
     display: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: end;
   }
 }

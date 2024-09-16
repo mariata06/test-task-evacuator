@@ -23,4 +23,14 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  &--blue-bg {
+    border-radius: 50px;
+    background-color: #0297D4;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 16px 30px;
+  }
 }

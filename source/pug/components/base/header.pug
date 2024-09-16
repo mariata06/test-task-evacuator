@@ -1,17 +1,17 @@
 mixin header(headerMods, currentUrl)
   -
     const headerLinks = [
+      //- {
+      //-   href: "index.html",
+      //-   text: "Главная"
+      //- },
       {
-        href: "index.html",
-        text: "Главная"
+        href: "#",
+        text: "о проекте"
       },
       {
         href: "#",
-        text: "Страница 2"
-      },
-      {
-        href: "#",
-        text: "Страница 3"
+        text: "контакты"
       },
     ]
 
@@ -19,7 +19,8 @@ mixin header(headerMods, currentUrl)
     .container
       if(currentUrl === "index.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href
-        span.header__logo Логотип
+        span.header__logo
+          img(src="img/content/logo-truck.png" alt="truck")
       else
         a.header__logo(href="index.html", aria-label="Переход на главную") Логотип
       nav.main-nav
@@ -33,4 +34,10 @@ mixin header(headerMods, currentUrl)
                 if(activeState)
                   span.main-nav__link.is-active= link.text
                 else
-                  a.main-nav__link(href=link.href)= link.text
+                  a.main-nav__link.link(href=link.href)= link.text
+      button.header__btn.btn.btn--blue-bg(type="button", aria-label="post an ad", aria-pressed="false") Добавить объявление
+
+    .header__phones.phones
+      .container
+        h2.title.title--h2 Телефоны для вызова эвакуатора в
+          a.phones__link.link(href="#", aria-label="телефоны здесь") Москве
